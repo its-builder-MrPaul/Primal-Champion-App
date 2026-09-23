@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Primal Champion",
+    "slug": "primal-champion",
+    "version": "1.0.0",
+    "scheme": "primalchampion",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Primal Champion uses your location only while you have an active run so it can record your route, distance and pace.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-image-picker",
+      "expo-camera",
+      "expo-notifications"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.primalchampion.app",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.primalchampion.app"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
